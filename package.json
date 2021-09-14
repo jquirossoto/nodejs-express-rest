@@ -1,0 +1,44 @@
+{
+  "name": "nodejs-express-rest",
+  "version": "1.0.0",
+  "description": "Pluralsight Node.js course: https://www.pluralsight.com/courses/node-js-express-rest-web-services-update",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon app.js",
+    "test": "NODE_ENV=test mocha tests/**/*Tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jquirossoto/nodejs-express-rest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jquirossoto/nodejs-express-rest/issues"
+  },
+  "homepage": "https://github.com/jquirossoto/nodejs-express-rest#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5",
+    "supertest": "^6.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "mocha": "^9.1.1",
+    "nodemon": "^2.0.12",
+    "should": "^13.2.3",
+    "sinon": "^11.1.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
